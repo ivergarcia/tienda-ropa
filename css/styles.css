@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #073b4c;
+    --secondary-color: #118ab2;
+    --third-color: #06d6a0;
+    --fourth-color: #ffd166;
+    --fifth-color: #ef476f;
+    --white-color: #fff;
+    --white-ligth-color: rgb(219, 210, 210);
+    --black-color: #000;
+}
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-image: url(https://www.wallpapertip.com/wmimgs/2-20640_eiffel-tower.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:var(--black-color);
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 5rem;
+    border-bottom: 0.02rem solid rgb(223, 215, 215);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+    padding-top: 0.4rem;
+}
+
+.logo-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo-title {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.menu {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    flex: auto;
+}
+
+.menu-item-label {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.menu-item-label:hover {
+    background-color: rgba(0,0,0, 0.1);
+    color: rgba(0,0,0, 0.5);
+    border-bottom: 0.1rem solid rgb(255, 255, 255);
+}
+
+.content {
+    display: flex;
+    flex: auto;
+    margin: 1rem;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.card {
+    height: 15rem;
+    width: 20rem;
+    background-color: rgba(0,0,0, 0.1);
+
+}
+
+.footer {
+    background-color: var(--fourth-color);  
+}
