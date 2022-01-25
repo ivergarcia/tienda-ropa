@@ -97,7 +97,7 @@ a {
 .content {
     display: flex;
     flex: auto;
-    margin: 1rem;
+    margin: 2rem;
     background-color: transparent;
     justify-content: space-around;
 }
@@ -105,15 +105,29 @@ a {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px;
     grid-auto-rows: minmax(100px, auto);
 }
 
 .card {
-    height: 15rem;
+    display: flex;
+    flex:auto;
+    height: 20rem;
     width: 20rem;
+    border-radius: 20px;
+    border: none;
     background-color: rgba(0,0,0, 0.1);
+    box-shadow: 8px 10px 5px 0px rgba(82,82,82,0.75);
+    -webkit-box-shadow: 8px 10px 5px 0px rgba(82,82,82,0.75);
+    -moz-box-shadow: 8px 10px 5px 0px rgba(82,82,82,0.75);
+}
 
+.card-img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+    border: none;
+    object-fit: cover;
 }
 
 .footer {
